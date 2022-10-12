@@ -150,9 +150,9 @@ form > label::before{
   width : 50px;
   height : 270px;
   position : fixed;
-  right : 10px;
-  bottom :6%;
-  transform : translate(-50%,-50%);
+  right : 15px;
+  bottom :50%;
+  transform : translateY(50%);
   background : #eee;
   display : flex;
   flex-direction : column;
@@ -177,6 +177,32 @@ form > label::before{
   align-items : center;
   gap : 10px;
   border-radius : 5px;
+}
+}
+
+  @media (max-height:600px){
+  #color_picker{
+  width : 250px;
+  height : 50px;
+  position : absolute;
+  bottom :2%;
+  left : 50%;
+  transform : translate(-50%,-50%);
+  background : #eee;
+  display : flex;
+  flex-direction : row;
+  justify-content : center;
+  align-items : center;
+  gap : 10px;
+  border-radius : 5px;
+}
+}
+  
+  @media (max-height:480px){
+  #color_picker{
+  top :8%;
+  left : 50%;
+  transform : translate(-50%,-50%);
 }
 }
 
@@ -211,5 +237,3 @@ form > label::before{
 #color_picker > .six{
   background : #000;
 }
-  
-
